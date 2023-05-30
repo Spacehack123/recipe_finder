@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Dosis', sans-serif;
+	background-color: #48301d;
+	color: #fff;
+}
+
+.wrapper {
+	width: 800px;
+	background-color: #714e34;
+	box-shadow: 0 0 10px #000;
+	margin-bottom: 30px;
+}
+.header {
+	display: flex;
+	justify-content: flex-start;
+	background-image: url('https://cdn.pixabay.com/photo/2017/06/01/18/46/cook-2364221_960_720.jpg');
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	height: 360px;
+	padding: 20px 40px;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #00000028;
+	z-index: -1;
+}
+
+.shadow2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0000003c;
+	z-index: -1;
+	transition: background-color 0.3s;
+}
+h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.search {
+	padding: 10px 20px;
+	width: 100%;
+	font-size: 16px;
+	border-radius: 5px;
+	background-color: #231d1dbd;
+	color: #fff;
+}
+
+h2 {
+	padding: 20px 40px;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 23px;
+	list-style: none;
+	height: 100%;
+	width: 100%;
+}
+li {
+	position: relative;
+	width: 50%;
+	height: 200px;
+	padding: 8px 30px;
+	border-bottom: 1px solid #c9c9c9;
+	text-shadow: 0 0 10px #000;
+	border: 2px solid #ffffff;
+	display: flex;
+	text-align: center;
+	transition: transform 0.5s, z-index 0s 0s;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 3;
+	font-size: 25px;
+}
+li:last-child {
+	border-bottom: 0;
+}
+li:hover .shadow2 {
+	background-color: #0000008e;
+}
+
+.porkchop {
+	background-image: url('https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/schabowe_01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.potato-pancakes {
+	background-image: url('https://staticsmaker.iplsc.com/smaker_prod_2016_08_17/603b2c9760dbc2fe7f2a6069cc74eb1e-content.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.dumplings {
+	background-image: url('https://cdn.aniagotuje.com/pictures/articles/2022/03/26004186-v-1500x1500.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.casserole {
+	background-image: url('https://cdn.galleries.smcloud.net/t/photos/gf-Bvvk-ZXuU-cwiR_zapiekanka-z-makaronu-i-kurczaka.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.bolognese {
+	background-image: url('https://aniastarmach.pl/content/uploads/2016/02/makaron-spaghetti-bolognese-1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.carbonara {
+	background-image: url('https://www.culinaryhill.com/wp-content/uploads/2021/12/Spaghetti-Carbonara-Culinary-Hill-1200x800-1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.greek-fish {
+	background-image: url('https://dusiowakuchnia.pl/wp-content/uploads/2014/12/ryba_po_grecku.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.goulash {
+	background-image: url('https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/gulasz-wegierski-2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.pancakes-meat {
+	background-image: url('https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/13/nalesniki-z-miesem-mielonym.jpeg');
+	background-position: center;
+	background-size: cover;
+}
+
+.tiramisu {
+	background-image: url('https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/deser_tiramisu_0.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.knuckle {
+	background-image: url('https://cdn.galleries.smcloud.net/t/galleries/gf-nLST-HFVb-MrJg_golonka-w-piwie-po-bawarsku-przepis-na-pieczona-golonke-wieprzowa-664x0-nocrop.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.eggs {
+	background-image: url('https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/jajka_faszerowane_szynka_01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.salmon {
+	background-image: url('https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/losos_z_sosem_koperkowym_01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.broccoli-soup {
+	background-image: url('https://staticsmaker.iplsc.com/smaker_production_2021_11_20/f00c26bbb30204dd2ec51ea8d2b81489-recipe_main.jpg');
+	background-position: center;
+	background-size: cover;
+}
